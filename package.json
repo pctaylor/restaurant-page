@@ -1,0 +1,23 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "The Odin Project: Restaurant Page Project (https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pctaylor/restaurant-page.git"
+  },
+  "author": "chapip",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pctaylor/restaurant-page/issues"
+  },
+  "homepage": "https://github.com/pctaylor/restaurant-page#readme",
+  "devDependencies": {
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
