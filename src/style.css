@@ -1,0 +1,12 @@
+* {
+    text-align: center;
+    padding: 8px;
+}
+
+#landing-img {
+    height: 500px;
+}
+
+#name {
+    font-size: 48px;
+}

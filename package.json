@@ -4,7 +4,8 @@
   "description": "The Odin Project: Restaurant Page Project (https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,8 @@
   },
   "homepage": "https://github.com/pctaylor/restaurant-page#readme",
   "devDependencies": {
+    "css-loader": "^6.8.1",
+    "style-loader": "^3.3.3",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4"
   }
