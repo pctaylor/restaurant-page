@@ -17,7 +17,7 @@ export const loadWelcome = () => {
 
     // Tag lin
     const tagLine = document.createElement('div');
-    tagLine.id = 'tag-line'
+    tagLine.id = 'tagLine'
     tagLine.innerHTML = 'Offering <em>the best</em> brains, hearts, steaks, and bones since 1919'
     contentDiv.appendChild(tagLine);
 } 
