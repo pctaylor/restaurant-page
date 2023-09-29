@@ -3,15 +3,44 @@
     padding: 8px;
 }
 
+/* ------------------------------------------------------
+*  RESTAURANT WELCOME
+* ------------------------------------------------------*/
+/* LANDING IMAGE */
 #landing-img {
     height: 500px;
 }
 
+/* RESTAURANT NAME */
 #name {
     font-size: 48px;
     font-weight: 700;
 }
 
+/* RESTAURANT TAG LINE */
 #tagLine {
     font-size: 24px;
+}
+
+/* ------------------------------------------------------
+*  USER ACTION TABS: ABOUT, CONTACT, MENU
+* ------------------------------------------------------*/
+
+#tab-container {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.tab {
+    padding: 16px;
+    width: 100px;
+    border: solid black 1px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.tab:hover {
+    background-color: black;
+    color: white;
 }

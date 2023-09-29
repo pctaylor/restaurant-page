@@ -15,9 +15,24 @@ export const loadWelcome = () => {
     imgElement.id = 'landing-img';
     contentDiv.appendChild(imgElement);
 
-    // Tag lin
+    // Tag line
     const tagLine = document.createElement('div');
     tagLine.id = 'tagLine'
     tagLine.innerHTML = 'Offering <em>the best</em> brains, hearts, steaks, and bones since 1919'
     contentDiv.appendChild(tagLine);
+
+    // Tab Container
+    const tabBox = document.createElement('div');
+    tabBox.id = 'tab-container';
+    contentDiv.appendChild(tabBox);
+
+    // Tabs
+    let tabNames = ['about', 'menu', 'contact']
+    tabNames.forEach(function(tabName) {
+        const tab = document.createElement('div');
+        tab.className = "tab"
+        tab.id = tabName;
+        tab.innerHTML = tabName.toUpperCase();
+        tabBox.appendChild(tab);
+    });
 } 
