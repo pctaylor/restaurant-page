@@ -2,6 +2,8 @@
 import './style.css';
 import { loadWelcome } from './welcome.js';
 import { aboutInfo } from './about';
+import { menuInfo } from './menu';
+import { contactInfo } from './contact';
 
 console.log("hello, world");
 
@@ -25,12 +27,16 @@ document.addEventListener('DOMContentLoaded', function() {
     tabs.forEach(tab => {
         tab.addEventListener('click', function() {
             // Handle the click event
+            infoBox.innerHTML = '';
             const tabId = this.id; // Get the id of the clicked tab
             console.log(`Tab with id ${tabId} was clicked!`);
             if (this.id=="about") {
-                infoBox.innerHTML = '';
                 aboutInfo(infoBox);
-            };
+            } else if (this.id=="menu") {
+                menuInfo(infoBox);
+            } else if (this.id=="contact") {
+                contactInfo(infoBox);
+            }
         });
     });
 });
