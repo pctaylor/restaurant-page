@@ -1,6 +1,7 @@
 // Import style and modules
 import './style.css';
 import { loadWelcome } from './welcome.js';
+import { aboutInfo } from './about';
 
 console.log("hello, world");
 
@@ -19,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Select all elements with the class 'tab'
     const tabs = document.querySelectorAll('.tab');
-    console.log(tabs);
 
     // Loop through each tab and add an event listener
     tabs.forEach(tab => {
@@ -27,10 +27,10 @@ document.addEventListener('DOMContentLoaded', function() {
             // Handle the click event
             const tabId = this.id; // Get the id of the clicked tab
             console.log(`Tab with id ${tabId} was clicked!`);
-            infoBox.innerHTML = '';
-            
-            // You can add more logic here to handle the click event, 
-            // such as displaying the corresponding content for the clicked tab.
+            if (this.id=="about") {
+                infoBox.innerHTML = '';
+                aboutInfo(infoBox);
+            };
         });
     });
 });
