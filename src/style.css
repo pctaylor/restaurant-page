@@ -97,3 +97,28 @@ p {
 }
 
 /* CONTACT */
+#contact-grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 48px;
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+#location-info {
+    display: flex;
+    flex-direction: column;
+    border: solid black 1px;
+    justify-content: center;
+}
+
+#location-map {
+    width: 100%;
+    padding-bottom: 100%;
+    background-color: #e0e0e0;
+}
+
+#location-address {
+    padding: 16px;
+}

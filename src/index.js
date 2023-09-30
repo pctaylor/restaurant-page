@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const contentDiv = document.getElementById('content');
     const infoBox = document.createElement('div');
     infoBox.id = 'info-container';
-    infoBox.innerHTML = "start test";
     contentDiv.appendChild(infoBox);
     
     // Select all elements with the class 'tab'
