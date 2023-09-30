@@ -1,6 +1,5 @@
 * {
     text-align: center;
-    padding: 8px;
 }
 
 /* ------------------------------------------------------
@@ -9,6 +8,7 @@
 /* LANDING IMAGE */
 #landing-img {
     height: 500px;
+    margin: 16px;
 }
 
 /* RESTAURANT NAME */
@@ -20,6 +20,7 @@
 /* RESTAURANT TAG LINE */
 #tagLine {
     font-size: 24px;
+    margin: 16px;
 }
 
 /* ------------------------------------------------------
@@ -33,7 +34,7 @@
 }
 
 .tab {
-    padding: 16px;
+    padding: 8px;
     width: 120px;
     border: solid black 1px;
     background-color: white;
@@ -48,6 +49,15 @@
 /* ------------------------------------------------------
 *  TAB CONTENT
 * ------------------------------------------------------*/
+
+/* GENERAL SET UP */
+#info-container { 
+    display: flex;    
+    justify-content: center;
+    padding: 24px;
+}
+
+/* ABOUT SECTION */
 p {
     text-align: left;
     size: 14px;
@@ -58,7 +68,32 @@ p {
     padding-right: 10%;
 }
 
-#info-container { 
-    display: flex;    
-    justify-content: center;
+/* MENU */
+#menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
+
+.menu-item {
+    border: solid black 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.menu-image {
+    width: 100%; 
+    padding-bottom: 100%;
+    background-color: #e0e0e0;
+}
+
+.menu-description {
+    padding: 16px;
+}
+
+/* CONTACT */
