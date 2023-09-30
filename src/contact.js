@@ -25,6 +25,6 @@ export const contactInfo = function(parent) {
     // RHS for phone, email, socials ------------------------------
     const outreachInfo = document.createElement('div');
     outreachInfo.id = "outreach-info"
-    outreachInfo.innerHTML = "phone <br> email <br> socials"
+    outreachInfo.innerHTML = "Phone: +1 222-333-4444 <br><br> Email: face-eater@cannibaljoes.com <br><br> Social: X | Y | Z"
     contactgrid.appendChild(outreachInfo);
 };
